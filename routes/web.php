@@ -1,6 +1,5 @@
 <?php
-use App\Models\Product;
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/products', function(){
 
-     return Product::all();
-});
-Route::post('products', function(){
-
-
-});
 
 Route::get('/', function () {
     return view('welcome');
